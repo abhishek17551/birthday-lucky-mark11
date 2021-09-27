@@ -25,7 +25,10 @@ function checkBirthDateLucky(){
 }
 
 function compareValues(sum, luckyNumber){
-    if(sum % (luckyNumber) === 0){                            // do not use .value here as we have already used in line 19 while calling the fucntion
+    if(luckyNumber <= 0){
+        outputBox.innerText = "Please enter positive values"
+    }
+    else if(sum % (luckyNumber) === 0){                            // do not use .value here as we have already used in line 19 while calling the fucntion
         outputBox.innerText = "Your birth date is lucky!!!" ;
     } else{
         outputBox.innerText = "Your birth date is not lucky";
