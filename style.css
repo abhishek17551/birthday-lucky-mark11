@@ -50,3 +50,8 @@ textarea {
     cursor: pointer;
 
 }
+
+p {
+    margin-top: 4%;
+    text-align: center;
+}
